@@ -1,5 +1,0 @@
-.box{height: 100vh;} 
-.left-box{width: 40%;background: url(/images/bg-main-desktop.png);background-repeat: no-repeat;background-size: cover;float: left;}
-.right-box{width: 60%; background-color: white;float: right;display: flex;align-items: center;justify-content: center;} 
-.left-box img{width: 100%;} 
-form{min-width: 550px;}

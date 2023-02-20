@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   <!-- Style sheet -->
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
@@ -19,47 +19,48 @@
     <img class="gradient desktop-grad" src="/images/bg-main-desktop.png" alt="gradient-bg-desktop">
   </div>
   <div class="right-box box">
-    <form>
-      <div class="form-group">
-        <label for="cardholdername">Card Holder Name</label>
-        <input type="text" class="form-control" id="cardholdername" aria-describedby="emailHelp"
-          placeholder="e.g. Jane Appleseed">
-      </div>
-      <div class="form-group">
-        <label for="cardnumber">Card Number</label>
-        <input type="number" class="form-control" id="cardnumber" placeholder="e.g. 1234 4567 7890">
-      </div>
-      <div class="form-group">
-        <div class="row">
-        <div class="col-6">
-          <label for="cardnumber">EXP. Date (MM/YY)</label> 
-        </div> 
-        <div class="col-6">
-         <label for="cardnumber">CVC</label>
-        </div> 
-        </div>
-        <div class="form-row">
-          
-          <div class="col-3">
-            <input type="number" class="form-control" id="cardmonth" placeholder="MM">
-            <label for="cardmonth"></label>
+    <div class="form-wrapper">
+      <form>
+          <div class="form-group">
+            <label for="cardholdername">Card Holder Name</label>
+            <input type="text" class="form-control" id="cardholdername" aria-describedby="emailHelp"
+              placeholder="e.g. Jane Appleseed">
           </div>
-          <div class="col-3 ">
-            <input type="number" class="form-control" id="cardyear" placeholder="YY">
-            <label for="cardyear"></label>
-          </div>  
-         
-          <div class="col-6"> 
-           
-            <input type="number" class="form-control" id="cardyear" placeholder="e.g.123">
-            <label for="cardyear"></label>
+          <div class="form-group">
+            <label for="cardnumber">Card Number</label>
+            <input type="number" class="form-control" id="cardnumber" placeholder="e.g. 1234 4567 7890">
           </div>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">confirm</button> 
-  </div>
-
-  </form>
+          <div class="form-group">
+            <div class="row">
+            <div class="col-6">
+              <label for="cardnumber">EXP. Date (MM/YY)</label> 
+            </div> 
+            <div class="col-6">
+            <label for="cardnumber">CVC</label>
+            </div> 
+            </div>
+            <div class="form-row">
+              
+              <div class="col-3">
+                <input type="number" class="form-control" id="cardmonth" placeholder="MM">
+                <label for="cardmonth"></label>
+              </div>
+              <div class="col-3 ">
+                <input type="number" class="form-control" id="cardyear" placeholder="YY">
+                <label for="cardyear"></label>
+              </div>  
+            
+              <div class="col-6"> 
+              
+                <input type="number" class="form-control" id="cardyear" placeholder="e.g.123">
+                <label for="cardyear"></label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">confirm</button> 
+          </div>
+      </form> 
+</div>
   </div>
 
 
@@ -77,7 +78,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="/app.js"></script>
+  <script src="/src/app/app.js"></script>
 </body>
 
 </html>
