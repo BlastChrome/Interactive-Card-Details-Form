@@ -109,8 +109,12 @@ body{font-family: 'Space Grotesk', 'sans-serif';text-transform: uppercase;overfl
     .left-box .credit-card-box.front{top:197px;}
     .card-back-numbers{font-size: 0.65em;}
     .right-box{padding: 90px 5px 5px 5px;}
+    .left-box .card-info-wrapper{height: 45px;}
+    .left-box .card-number{font-size: 1em;}
+    .left-box .card-bottom-row{font-size: 0.6em;}
 }
 
 @media (max-width: 400px){
     .left-box .credit-card-box.front, .left-box .credit-card-box.back{left: 0;}
+    
 }
