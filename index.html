@@ -22,16 +22,16 @@
           <img class="credit-card card-front" src="/images/bg-card-front.png" alt="credit card img, front">
           <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
           <div class="card-info-wrapper">
-            <div class="card-number">0000 0000 0000 0000</div> 
+            <div class="card-number"></div> 
             <div class="card-bottom-row">
-              <div class="card-name">Jane Appleseed</div>
-              <div class="card-date">00/00</div>
+              <div class="card-name"></div>
+              <div class="card-date"></div>
             </div>
           </div>
         </div> 
         <div class="credit-card-box back">
           <img class="credit-card card-back" src="/images/bg-card-back.png" alt="credit card img, back"> 
-          <span id="card-back-numbers">000</span>
+          <span id="card-back-numbers"></span>
         </div>
       </div>
     
@@ -42,11 +42,12 @@
                 <div class="form-group">
                   <label for="cardholdername">Card Holder Name</label>
                   <input type="text" class="form-control" id="cardholdername" aria-describedby="emailHelp"
-                    placeholder="e.g. Jane Appleseed">
+                    placeholder="e.g. Jane Appleseed">  
+                    <div class="error-name">Name must not contain numbers or special characters!</div>
                 </div>
                 <div class="form-group">
                   <label for="cardnumber">Card Number</label>
-                  <input type="number" class="form-control" id="cardnumber" placeholder="e.g. 1234 4567 7890">
+                  <input type="text" class="form-control" id="cardnumber" placeholder="e.g. 1234 4567 7890">
                 </div>
                 <div class="form-group">
                   <div class="row">
@@ -60,22 +61,22 @@
                   <div class="form-row">
                     
                     <div class="col-3">
-                      <input type="number" class="form-control" id="cardmonth" placeholder="MM">
+                      <input type="text" class="form-control" id="cardmonth" placeholder="MM">
                       <label for="cardmonth"></label>
                     </div>
                     <div class="col-3 ">
-                      <input type="number" class="form-control" id="cardyear" placeholder="YY">
+                      <input type="text" class="form-control" id="cardyear" placeholder="YY">
                       <label for="cardyear"></label>
                     </div>  
                   
                     <div class="col-6"> 
                     
-                      <input type="number" class="form-control" id="cardyear" placeholder="e.g.123">
-                      <label for="cardyear"></label>
+                      <input type="text" class="form-control" id="cardcsv" placeholder="e.g.123">
+                      <label for="cardcsv"></label>
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">confirm</button> 
+                <button id="process" type="submit" class="btn btn-primary">confirm</button> 
                 </div>
             </form>  
     </div>  
