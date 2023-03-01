@@ -10,7 +10,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/Space_Grotesk/SpaceGrotesk-Regular.eot');
@@ -23,7 +22,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/Space_Grotesk/SpaceGrotesk-Bold.eot');
@@ -36,7 +34,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/Space_Grotesk/SpaceGrotesk-Medium.eot');
@@ -49,7 +46,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/Space_Grotesk/SpaceGrotesk-Light.eot');
@@ -84,18 +80,16 @@ body{font-family: 'Space Grotesk', 'sans-serif';text-transform: uppercase;overfl
 /* error classes */
 .form-group{position: relative;margin-bottom: 2em;}
 .form-group input{position: relative; z-index: 1;}
-.error-name{background: #ff0a73;color: #fff;font-size: 0.1em;padding: 3px;text-align: center;position: absolute; width:0%; z-index: 0;top: 35px;z-index: 0;transition: all 0.3s ease-in-out;} 
-/* .error-name.hide{top:35px; font-size: 0.1em;width: 0%;} */
-.error-name.show{top:-35px;font-size: 0.9em;width: 99%;}
+.error{background: #ff0a73;color: #fff;font-size: 0.9em;padding: 1px;text-align: center;position: absolute; width:100%; z-index: 0;top: 35px;z-index: 0;transition: all 0.3s ease-in-out; opacity: 0;} 
+.error.special{max-width: 210px;}
+.error.show{top: -26px;opacity: 1;}
 
 
 @media (max-width: 1560px){
     .left-box .credit-card-box{width: 390px; left:35%; top: 32%;}
     .left-box .credit-card-box.back{left:45%; top: 55%;}
-    .form-wrapper {max-width: 350px;}
+    .form-wrapper {max-width: 450px;}
     .left-box .card-number{font-size: 1.4em;letter-spacing: 0.15em;}
-
-    
 }
 
 @media (max-width: 1199px){
@@ -113,6 +107,7 @@ body{font-family: 'Space Grotesk', 'sans-serif';text-transform: uppercase;overfl
 }
 
 @media (max-width: 455px){
+
     .left-box .credit-card-box.front, .left-box .credit-card-box.back{max-width: 300px;}
     .left-box .credit-card-box.front{top:197px;}
     .card-back-numbers{font-size: 0.65em;}
@@ -120,6 +115,7 @@ body{font-family: 'Space Grotesk', 'sans-serif';text-transform: uppercase;overfl
     .left-box .card-info-wrapper{height: 45px;}
     .left-box .card-number{font-size: 1em;}
     .left-box .card-bottom-row{font-size: 0.6em;}
+    .error{font-size: 0.6em;;}
 }
 
 @media (max-width: 400px){
