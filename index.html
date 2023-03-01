@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/app/aos-next/demo/css/styles.css" />
+
   <title>Bootstrap Boilerplate</title>
 
   <!-- Bootstrap CSS -->
@@ -19,13 +21,13 @@
     <div class="left-box box">
       <div class="img-box"> 
         <div class="credit-card-box front">
-          <img class="credit-card card-front" src="/images/bg-card-front.png" alt="credit card img, front">
+          <img class="credit-card card-front" data-aos="fade-up" src="/images/bg-card-front.png" alt="credit card img, front">
           <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
           <div class="card-info-wrapper">
-            <div class="card-number"></div> 
+            <div class="card-number">000 000 000 000</div> 
             <div class="card-bottom-row">
-              <div class="card-name"></div>
-              <div class="card-date"></div>
+              <div class="card-name">Jane Apppleseed</div>
+              <div class="card-date">00/00</div>
             </div>
           </div>
         </div> 
@@ -41,7 +43,7 @@
             <form>
                 <div class="form-group">
                   <label for="cardholdername">Card Holder Name</label>
-                  <input type="text" class="form-control" id="cardholdername" aria-describedby="emailHelp"
+                  <input data-aos="fade-up" type="text" class="form-control" id="cardholdername" aria-describedby="emailHelp"
                     placeholder="e.g. Jane Appleseed">  
                     <div class="error error-name">Name must not contain numbers or special characters!</div>
                 </div>
@@ -84,6 +86,11 @@
             </form>  
     </div>  
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script type="module">
+    AOS.init();
+  </script>
 
   </div>
 
@@ -99,7 +106,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="/src/app/app.js"></script>
+    <script src="/src/app/app.js"></script> 
+   
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 window.addEventListener('load', function() {
+
+  
     // Card Graphic Elements
     const cardNumberGraphic = document.querySelector('.card-number');
     const cardNameGraphic  = document.querySelector('.card-name');
@@ -28,7 +30,7 @@ window.addEventListener('load', function() {
     })
   
     // Processes Each Input, and displays if not entered correctly Errors
-    let ProcessInputData = () => { 
+    const ProcessInputData = () => { 
       ProcessInputName(cardNameInput,cardNameGraphic,errorNameElement); 
       ProcessInputNumber(cardNumberInput,cardNumberGraphic,errorNumberElement);  
       ProcessInputDate(cardMonthInput,cardYearInput,cardDateGraphic,errorDateElement);
@@ -36,7 +38,7 @@ window.addEventListener('load', function() {
     }
   
     // Processes the Name input Field
-    let ProcessInputName = (nameInput,nameGraphic,error) => {
+    const ProcessInputName = (nameInput,nameGraphic,error) => {
       const inputText = nameInput.value; 
       const nameRegex = /^[a-zA-Z\s]{1,20}$/;
       const isValid = nameRegex.test(inputText);
@@ -44,7 +46,7 @@ window.addEventListener('load', function() {
     }
     
     // Processes the Card Number input Field
-    let ProcessInputNumber = (numberInput,numberGraphic,error) => {
+    const ProcessInputNumber = (numberInput,numberGraphic,error) => {
       const inputText = numberInput.value; 
       const numberRegex = /^(\d{4}\s){3}\d{4}$/;
       const isValid = numberRegex.test(inputText); 
@@ -52,7 +54,7 @@ window.addEventListener('load', function() {
     } 
 
     // Processes the Card Month input Field
-    let ProcessInputDate = (monthInput,yearInput,dateGraphic,error) => { 
+    const ProcessInputDate = (monthInput,yearInput,dateGraphic,error) => { 
         const dateText =  monthInput.value + "/" + yearInput.value; 
         const inputText = dateText;
         const dateRegex = /^(0[1-9]|1[0-2])\/[0-9]{2}$/;
@@ -68,7 +70,7 @@ window.addEventListener('load', function() {
     }
 
     // Returns Error message above erroneous input field
-    let UpdateGraphicAndError = (isValid, inputText, graphicElement, errorElement) => {
+    const UpdateGraphicAndError = (isValid, inputText, graphicElement, errorElement) => {
       if(!isValid) {
         errorElement.classList.toggle("show", true);
       } else{
